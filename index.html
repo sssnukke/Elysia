@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/Header.css">
+    <link rel="stylesheet" href="styles/Layout.css">
+    <link rel="stylesheet" href="styles/Utils.css">
+    <link rel="stylesheet" href="styles/Article.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysia - Ergonomic Framework for Humans | ElysiaJS</title>
+</head>
+<body>
+    <div class="Layout">
+        <header class="Header">
+            <div class="HeaderNavBar">
+                <div class="Header__wrapper">
+                    <div class="Header__container">
+                        <div class="Header__logo">
+                            <img class="Header__logo-img" src="assets/images/logo.svg" alt="logo">
+                            <p>ElysiaJS</p>
+                        </div>
+                        <div class="Header__content">
+                            <div class="Header__content-body">
+                                <div class="HeaderContent__search">
+                                    <div class="HeaderContent__search-local">
+                                        <button class="HeaderContentSearch__button" type="button">
+                                            <span class="HeaderContentSearch__button-item">
+                                                <img class="HeaderContentSearch__button-icon" src="assets/images/loupe.svg" alt="loupe">
+                                                <span class="HeaderContentSearch__button-placeholder">Search</span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <nav class="HeaderContent__navigation">
+                                    <a href="#" class="HeaderContent__navigation-link">
+                                        <span class="HeaderContentNavigation__link-text">Cheat Sheet</span>
+                                    </a>
+                                    <a href="#" class="HeaderContent__navigation-link">
+                                        <span class="HeaderContentNavigation__link-text">Plugins</span>
+                                    </a>
+                                    <a href="#" class="HeaderContent__navigation-link">
+                                        <span class="HeaderContentNavigation__link-text">Blog</span>
+                                    </a>
+                                </nav>
+                                <div class="HeaderContent__appearance">
+                                    <button class="HeaderContent__appearance-button">
+                                        <span class="HeaderContentAppearance__button-icon">
+                                            <img class="HeaderContentAppearanceButton__icon-img" src="assets/images/theme_sun.svg" alt="sun">
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="HeaderContent__social">
+                                    <a href="#" class="HeaderContent__social-link">
+                                        <img class="HeaderContentSocial__link-img" src="assets/images/github.svg" alt="github">
+                                    </a>
+                                    <a href="#" class="HeaderContent__social-link">
+                                        <img class="HeaderContentSocial__link-img" src="assets/images/twitter.svg" alt="twitter">
+                                    </a>
+                                    <a href="#" class="HeaderContent__social-link">
+                                        <img class="HeaderContentSocial__link-img" src="assets/images/discord.svg" alt="discord">
+                                    </a>
+                                </div>
+                                <button class="HeaderContent__three-point" aria-label="Options">
+                                    <img src="assets/images/three_point.svg" alt="points" class="HeaderContentThreePoint__icon">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="Header__content-adaption">
+                            <button class="Header__content-menu">
+                                <img src="assets/images/menu.svg" alt="menu" class="HeaderContent__menu-img">
+                            </button>
+                            <button class="Header__content-loupe">
+                                <img src="assets/images/loupe.svg" alt="menu" class="HeaderContent__loupe-img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="HeaderContent">
+                <img src="assets/images/elysia_v.webp" alt="elysia" class="HeaderContent__img">
+                <h2 class="HeaderContent__title">
+                    Ergonomic Framework for Humans
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                            <rect width="256" height="256" fill="none"></rect>
+                            <path d="M138.7,175.5l-19.2,52.1a8,8,0,0,1-15,0L85.3,175.5a8.1,8.1,0,0,0-4.8-4.8L28.4,151.5a8,8,0,0,1,0-15l52.1-19.2a8.1,8.1,0,0,0,4.8-4.8l19.2-52.1a8,8,0,0,1,15,0l19.2,52.1a8.1,8.1,0,0,0,4.8,4.8l52.1,19.2a8,8,0,0,1,0,15l-52.1,19.2A8.1,8.1,0,0,0,138.7,175.5Z" fill="#818CF8" stroke="#818CF8" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path>
+                            <line x1="176" y1="16" x2="176" y2="64" fill="none" stroke="#818CF8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                            <line x1="200" y1="40" x2="152" y2="40" fill="none" stroke="#818CF8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                            <line x1="224" y1="72" x2="224" y2="104" fill="none" stroke="#818CF8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                            <line x1="240" y1="88" x2="208" y2="88" fill="none" stroke="#818CF8" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                        </svg>
+                    </span>
+                </h2>
+                <h3 class="HeaderContent__text">
+                    TypeScript with <span class="HeaderContent__text-span">
+                    End-to-End Type Safety
+                </span>
+                    , type integrity, and exceptional developer experience. Supercharged by Bun.
+                </h3>
+                <section class="HeaderContent__section">
+                    <a href="#" class="HeaderContent__section-a">
+                        Get Started
+                    </a>
+                    <div class="HeaderContent__section-item">
+                        <code class="HeaderContentSection__item-code">
+                            bun create elysia app
+                        </code>
+                        <button class="HeaderContentSection__item-button">
+                            <img src="assets/images/copy.svg" alt="copy" class="HeaderContentSectionItem__button-img">
+                        </button>
+                    </div>
+                </section>
+                <p class="HeaderContent__p">
+                    See why developers love Elysia
+                    <img src="assets/images/down.svg" alt="down" class="HeaderContent__p-img">
+                </p>
+            </div>
+        </header>
+        <article class="Article">
+            <div class="ArticleIntroduction">
+                <div class="ArticleIntroduction__decoration">
+                    <div class="ArticleIntroduction__decoration-item">
+                        <div class="ArticleIntroduction__decoration-line-left"></div>
+                        <img src="assets/images/like.svg" alt="like">
+                        <div class="ArticleIntroduction__decoration-line-right"></div>
+                    </div>
+                    <h2 class="ArticleIntroduction__text">
+                        The first production ready,
+                        <br>
+                        and most loved Bun framework
+                    </h2>
+                </div>
+
+            </div>
+            <article class="ArticleFirst">
+                <div class="ArticleFirst__body">
+                    <header class="ArticleFirst__body-header">
+                        <div class="ArticleFirstBodyHeader">
+                            <h3 class="ArticleFirstBody__header-h3">Our Principle</h3>
+                            <h2 class="ArticleFirstBody__header-h2">Design for Human</h2>
+                        </div>
+                        <p class="ArticleFirstBody__header-p">Our goal is to design an ergonomic, sensible, and
+                            productive framework that even beginners can use easily</p>
+                        <p class="ArticleFirstBody__header-p">Designed to avoid unnecessary complexity and type
+                            complexity for you to focus on building</p>
+                        <p class="ArticleFirstBody__header-p">A framework that feels <span>just like JavaScript</span></p>
+                    </header>
+                    <section class="ArticleFirst__body-section">
+                        <div class="ArticleFirstBody__section-code">
+                            <pre class="ArticleFirstBodySection__code-pre">
+                                <code>
+                                    <ol>
+                                        <li><pre><span class="red">import</span> { Elysia } <span class="red">from</span> 'elysia'</pre></li>
+                                        <li><pre>  <span class="red">new</span> <span class="purpose">Elysia()</span></pre></li>
+                                        <li><pre> 	.<span class="purpose">get</span>('/', 'Hello World')</pre></li>
+                                        <li><pre>  <span class="purpose">	.get</span>('/image', Bun.<span class="purpose">file</span>('mika.webp'))</pre></li>
+                                        <li><pre>	<span class="purpose">.get</span>('/stream', <span class="red">function*</span> () {</pre></li>
+                                        <li><pre>		<span class="red">yield</span> 'Hello'</pre></li>
+                                        <li><pre>		<span class="red">yield</span> 'World'</pre></li>
+                                        <li><pre>	})</pre></li>
+                                        <li><pre>	<span class="purpose">.ws</span>('/realtime', {</pre></li>
+                                        <li><pre>		<span class="purpose">message</span>(ws, message) {</pre></li>
+                                        <li><pre> 		ws<span class="purpose">.send</span>('got:' + message)</pre></li>
+                                        <li><pre> 	   }</pre></li>
+                                        <li><pre>	})</pre></li>
+                                        <li><pre>	<span class="purpose">.listen</span>(3000)</pre></li>
+                                    </ol>
+                                </code>
+                            </pre>
+                        </div>
+                    </section>
+                </div>
+                <footer class="FooterFirst">
+                    <article>
+                        <h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            Just Return
+                        </h4>
+                        <p>A string, number or complex JSON</p>
+                        <p>All we need to do is just return</p>
+                    </article>
+                    <article>
+                        <h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-image"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            File built-in
+                        </h4>
+                        <p>To send a file or image, just return</p>
+                        <p>Nothing more or nothing less</p>
+                    </article>
+                    <article>
+                        <h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cloud-drizzle"><line x1="8" y1="19" x2="8" y2="21"></line><line x1="8" y1="13" x2="8" y2="15"></line><line x1="16" y1="19" x2="16" y2="21"></line><line x1="16" y1="13" x2="16" y2="15"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="12" y1="15" x2="12" y2="17"></line><path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path></svg>
+                            Stream response
+                        </h4>
+                        <p> Use <span class="font-mono text-violet-500 font-bold">yield</span> to stream response </p>
+                        <p>All we need to do is just return</p>
+                    </article>
+                    <article>
+                        <h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                            Data in realtime
+                        </h4>
+                        <p>With µWebSocket built-in</p>
+                        <p>Send live data in just 3 lines</p>
+                    </article>
+                </footer>
+            </article>
+            <article class="ArticleSecond">
+                <div class="ArticleSecond__title">
+                    <h1 class="ArticleSecond__title-h1">
+                        The Next Level of
+                        <span> Type Safety </span>
+                    </h1>
+                </div>
+                <section class="ArticleSecond__section-content">
+                    <div class="ArticleSecondSection__content-window">
+                        <div class="ArticleSecondSection__content-control">
+                            <div class="redd"></div>
+                            <div class="yellowd"></div>
+                            <div class="greend"></div>
+                        </div>
+                        <div class="ArticleSecondSection__item">
+                            <pre class="ArticleSecondSection__item-pre">
+                                <code>
+                                    <ol>
+                                        <li><pre><span class="red">import</span> { Elysia } <span class="red">from</span> 'elysia'</pre></li>
+                                        <li><pre>  <span class="red">new</span> <span class="purpose">Elysia()</span></pre></li>
+                                        <li><pre> 	.<span class="purpose">get</span>('/', 'Hello World')</pre></li>
+                                        <li><pre>  <span class="purpose">	.get</span>('/image', Bun.<span class="purpose">file</span>('mika.webp'))</pre></li>
+                                        <li><pre>	<span class="purpose">.get</span>('/stream', <span class="red">function*</span> () {</pre></li>
+                                        <li><pre>		<span class="red">yield</span> 'Hello'</pre></li>
+                                        <li><pre>		<span class="red">yield</span> 'World'</pre></li>
+                                        <li><pre>	})</pre></li>
+                                        <li><pre>	<span class="purpose">.ws</span>('/realtime', {</pre></li>
+                                        <li><pre>		<span class="purpose">message</span>(ws, message) {</pre></li>
+                                        <li><pre> 		ws<span class="purpose">.send</span>('got:' + message)</pre></li>
+                                        <li><pre> 	   }</pre></li>
+                                        <li><pre>	})</pre></li>
+                                        <li><pre>	<span class="purpose">.listen</span>(3000)</pre></li>
+                                    </ol>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+                <section class="ArticleSecond__section-selector">
+                    <form action="">
+                        <div>
+                            <input type="text">
+                            <label for="">Type Inference</label>
+                        </div>
+                        <div>
+                            <input type="text">
+                            <label for="">Enforce Type</label>
+                        </div>
+                        <div>
+                            <input type="text">
+                            <label for="">Return Type</label>
+                        </div>
+                        <div>
+                            <input type="text">
+                            <label for="">Bring your own</label>
+                        </div>
+                    </form>
+                </section>
+            </article>
+            <article class="ArticleThird">
+                <header>
+                    <h2>
+                        Your own documentation
+                        <span>in 1 line</span>
+                    </h2>
+                    <div class="ArticleThirdHeader__item">
+                        <p>It's not magic</p>
+                        <br>
+                        <p> With deep integration with OpenAPI schema
+                            <br>
+                            Elysia can generate Swagger documentation for your API out of the box
+                        </p>
+                    </div>
+                </header>
+                <div class="ArticleThird__hero">
+                    <img src="https://elysiajs.com/assets/scalar-preview-light.webp" alt="">
+                </div>
+            </article>
+        </article>
+    </div>
+</body>
+</html>
